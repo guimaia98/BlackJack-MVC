@@ -1,0 +1,58 @@
+﻿@{
+    ViewData["Title"] = "IMC";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Bem Vindo!</h1>
+    <p> Aprender sobre <a href="https://docs.microsoft.com/aspnet/core">MVC</a>.</p>
+</div>
+<form class="container" id="formulario">
+    <div class="col-md-5">
+        <fieldset class="form-group">
+
+            <legend> Cálculo IMC </legend>
+
+            <label for="peso">Peso: </label>
+            <input type="text" name="peso" class="form-control" />
+
+            <label for="altura">Altura: </label>
+            <input type="text" name="altura" class="form-control" />
+
+            <label for="imc"> IMC: </label>
+            <input type="text" name="imc" class="form-control" disabled="disabled" />
+
+            <br />
+
+            <button type="button" class="btn btn-dark" onclick="calcularIMC()"> Calcular IMC </button>
+
+        </fieldset>
+    </div>
+
+</form>
+
+<br />
+
+<form class="container" id="notas">
+    <div class="col-md-5">
+        <fieldset class="form-group">
+
+            <legend> Cálculo AV1 </legend>
+
+            <label for="nota1">nota 1: </label>
+            <input type="text" id="nota1" class="form-control" />
+
+            <label for="nota2">nota 2: </label>
+            <input type="text" id="nota2" class="form-control" />
+
+            <label for="media"> Média: </label>
+            <input type="text" name="media" class="form-control" disabled="disabled" />
+
+            <br />
+
+            <button type="button" class="btn btn-dark" onclick="calcular_media()"> Calcular Média </button>
+
+        </fieldset>
+    </div>
+
+</form>
+
